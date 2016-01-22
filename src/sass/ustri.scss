@@ -1,0 +1,42 @@
+$primary-dark: #263238;
+$primary: #607D8B;
+$primary-highlight: #1A237E;
+
+$blue-grey-900: #263238;
+$blue-grey-500: #607D8B;
+
+$gray-300: #E0E0E0;
+$gray-400: #BDBDBD;
+$gray-700: #616161;
+$gray-900: #212121;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+@import "normalize";
+@import "header";
+@import "landing-page";
+@import "block";
+@import "util";
+
+
+body {
+  color: $primary-dark;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.site-wrapper {
+  padding-top: 70px
+}
+
+.what-is-iaijutsu {
+  p {
+    padding: 1.5em 0;
+
+    &:last-child {
+      padding: 2.5em 0;
+    }
+  }
+}

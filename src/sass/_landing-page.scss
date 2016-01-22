@@ -1,0 +1,33 @@
+.landing-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/honbu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  // background-attachment: fixed; // I wish this worked
+  height: 350px;
+  position: relative;
+}
+
+.landing-page__title {
+  margin: 0;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  padding: 0.5em 0.5em 1.5em 4em;
+}
+
+.landing-page__title--main,
+.landing-page__title--sub {
+  display: block;
+}
+
+.landing-page__title--sub {
+  font-size: 0.8em;
+}
+
+.pink {
+  background: pink;
+  height: 200px;
+}

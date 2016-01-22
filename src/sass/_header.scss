@@ -1,0 +1,28 @@
+.site-header {
+  border-bottom: 4px solid $primary-dark;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background: white;
+}
+
+.site-nav {
+  float: right;
+}
+
+.site-nav__link {
+  font-size: 1.1em;
+  padding: 1.5em 2em;
+  color: $primary-dark;
+  font-weight: bold;
+  display: inline-block;
+
+  &:focus,
+  &:hover {
+    color: white;
+    text-decoration: none;
+    background-color: $primary-dark;
+  }
+}
