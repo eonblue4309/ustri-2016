@@ -468,9 +468,13 @@ th {
   background: #E0E0E0;
 }
 
-.block__title {
-  font-size: 1.3em;
+.block__title, .block__sub-title {
+  font-size: 2em;
   text-transform: capitalize;
+}
+
+.block__sub-title {
+  font-size: 1.4em;
 }
 
 .block__title--underline {
@@ -515,4 +519,9 @@ body {
 
 .what-is-iaijutsu p {
   padding: 1.5em 0;
+}
+
+.what-is-iaijutsu__tamiya-ryu-kanji {
+  width: 55%;
+  padding: 2em;
 }

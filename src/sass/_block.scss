@@ -9,8 +9,13 @@
 }
 
 .block__title {
-  font-size: 1.3em;
+  font-size: 2em;
   text-transform: capitalize;
+}
+
+.block__sub-title {
+  @extend .block__title;
+  font-size:1.4em;
 }
 
 .block__title--underline {

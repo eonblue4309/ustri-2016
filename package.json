@@ -1,15 +1,15 @@
 {
-  "name": "ustri-purecss",
+  "name": "ustri-2016",
   "version": "0.0.1",
-  "description": "A reimaged site for USTRI",
+  "description": "Redsign for 20 years",
   "author": "James Russell",
   "license": "ISC",
   "private": true,
   "devDependencies": {
-    "grunt": "~0.4.5",
+    "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-concat": "~0.4.0",
-    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-imagemin": "1.0.0",
     "grunt-contrib-jade": "^0.14.1",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-qunit": "~0.5.2",
@@ -21,7 +21,8 @@
     "http-server": "^0.8.0",
     "jade": "^1.11.0",
     "node-sass": "^3.2.0",
-    "normalize.css": "^3.0.3"
+    "normalize.css": "^3.0.3",
+    "imagemin": "^4.0.0"
   },
   "scripts": {
     "start": "http-server -a localhost -p 8080 -c-1"
