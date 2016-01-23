@@ -481,6 +481,11 @@ th {
   font-weight: bold;
 }
 
+.block__title--light {
+  color: #CFD8DC;
+  border-color: #CFD8DC;
+}
+
 .block--dark {
   background: #616161;
   color: #F5F5F5;
@@ -510,8 +515,4 @@ body {
 
 .what-is-iaijutsu p {
   padding: 1.5em 0;
-}
-
-.what-is-iaijutsu p:last-child {
-  padding: 2.5em 0;
 }

@@ -22,6 +22,11 @@
   font-weight: bold;
 }
 
+.block__title--light {
+  color: $blue-grey-100;
+  border-color: $blue-grey-100;
+}
+
 .block--dark {
   background: $gray-700;
   color: #F5F5F5;
