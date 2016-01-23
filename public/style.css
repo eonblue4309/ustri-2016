@@ -464,13 +464,23 @@ th {
   padding: 4em 0;
 }
 
+.block p {
+  margin: auto;
+  padding: 1.5em 0;
+  max-width: 34em;
+}
+
 .block--light {
   background: #E0E0E0;
 }
 
 .block__title, .block__sub-title {
-  font-size: 2em;
+  font-size: 1.8em;
   text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 1em;
+  color: #263238;
+  font-weight: bold;
 }
 
 .block__sub-title {
@@ -478,11 +488,9 @@ th {
 }
 
 .block__title--underline {
-  margin: 3em 0;
-  padding-bottom: 1em;
+  padding: 0 1em 1em;
+  display: inline-block;
   border-bottom: 3px solid #263238;
-  color: #263238;
-  font-weight: bold;
 }
 
 .block__title--light {
@@ -498,6 +506,10 @@ th {
 .block--darkest {
   background: #212121;
   color: #F5F5F5;
+}
+
+.block__content {
+  padding: 3em 0;
 }
 
 .spacer {
@@ -517,11 +529,26 @@ body {
   padding-top: 70px;
 }
 
-.what-is-iaijutsu p {
-  padding: 1.5em 0;
-}
-
-.what-is-iaijutsu__tamiya-ryu-kanji {
+.what-is-iaijutsu__kanji {
   width: 55%;
   padding: 2em;
+}
+
+.learn-more {
+  border: 5px solid #263238;
+  display: inline-block;
+  padding: .5em;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+}
+
+.learn-more, .learn-more:hover, .learn-more:focus {
+  color: #263238;
+  text-decoration: none;
+}
+
+.learn-more:hover, .learn-more:focus {
+  background: #263238;
+  color: #CFD8DC;
+  border-color: transparent;
 }

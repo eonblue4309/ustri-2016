@@ -2,6 +2,12 @@
   background: white;
   overflow: hidden;
   padding: 4em 0;
+
+  p {
+    margin: auto;
+    padding: 1.5em 0;
+    max-width: 34em;
+  }
 }
 
 .block--light {
@@ -9,8 +15,12 @@
 }
 
 .block__title {
-  font-size: 2em;
+  font-size: 1.8em;
   text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 1em;
+  color: $blue-grey-900;
+  font-weight: bold;
 }
 
 .block__sub-title {
@@ -19,12 +29,9 @@
 }
 
 .block__title--underline {
-  margin: 3em 0;
-  padding-bottom: 1em;
+  padding: 0 1em 1em;
+  display: inline-block;
   border-bottom: 3px solid $blue-grey-900;
-  color: $blue-grey-900;
-  // font-size: 1.3em;
-  font-weight: bold;
 }
 
 .block__title--light {
@@ -40,4 +47,8 @@
 .block--darkest {
   background: $gray-900;
   color: #F5F5F5;
+}
+
+.block__content {
+  padding: 3em 0;
 }

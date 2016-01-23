@@ -32,13 +32,26 @@ body {
   padding-top: 70px
 }
 
-.what-is-iaijutsu {
-  p {
-    padding: 1.5em 0;
+.what-is-iaijutsu__kanji {
+  width: 55%;
+  padding: 2em;
+}
+
+.learn-more {
+  border: 5px solid $primary-dark;
+  display: inline-block;
+  padding:.5em;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+
+  &, &:hover, &:focus {
+    color: $primary-dark;
+    text-decoration: none;
   }
 
-  &__tamiya-ryu-kanji {
-    width: 55%;
-    padding: 2em;
+  &:hover, &:focus {
+    background: $primary-dark;
+    color:$blue-grey-100;
+    border-color: transparent;
   }
 }
