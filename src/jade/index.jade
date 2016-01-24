@@ -42,7 +42,8 @@ html(lang="en")
             h2.block__title.block__title--underline Learn About Japanese Swordsmanship
 
             p Train your body and mind. Tamiya Ryu is a koryu (literally, "old school") sword art not taught outside Japan until recently. The United States Tamiya Ryu Iaijutsu Orgranization is the only official group practicing this art in America.
-
+            
+            img(src="images/katana.svg").katana-image
         
 
       div.block.block--light.row.what-is-iaijutsu.center
@@ -85,7 +86,7 @@ html(lang="en")
           
           p Emphasis is placed on basic techniques. To proper learna kata means studying 1) how to cut using the scabbard opening (sayaguchi) and 2) how to use the scabbard hand (sayate).
           
-          img(src="images/mon.svg").ki-ken-tai
+          img(src="images/mon.svg").kikyo-mon
           
           p Occasionally students will also practice Kenshibu - a traditional Japanese dance utilizing sword and fan. Kenshibu is performed to the accompaniment of poems (sung in a style called Shigin) that depict famous events in Japanese history.
           
@@ -95,22 +96,22 @@ html(lang="en")
         //- TODO: limit the max width of this section
         div.block__content
           div.col-xs-8.col-xs-offset-2.center.col-md-4.col-md-offset-0
-            img(src="images/ki-kanji.svg").ki-ken-tai
-            h3.block__sub-title Ki
-
-            p Spirit
-
-          div.col-xs-8.col-xs-offset-2.center.col-md-4.col-md-offset-0
-            img(src="images/ken-kanji.svg").ki-ken-tai
-            h3.block__sub-title Ken
-
-            p Sword
+            .ki-ken-tai
+              img(src="images/ki-kanji.svg").ki-ken-tai__kanji
+              h3.ki-ken-tai__title Ki
+              p.ki-ken-tai__body Spirit
 
           div.col-xs-8.col-xs-offset-2.center.col-md-4.col-md-offset-0
-            img(src="images/tai-kanji.svg").ki-ken-tai
-            h3.block__sub-title Tai
+            .ki-ken-tai
+              img(src="images/ken-kanji.svg").ki-ken-tai__kanji
+              h3.ki-ken-tai__title Ken
+              p.ki-ken-tai__body Sword
 
-            p Body
+          div.col-xs-8.col-xs-offset-2.center.col-md-4.col-md-offset-0
+            .ki-ken-tai
+              img(src="images/tai-kanji.svg").ki-ken-tai__kanji
+              h3.ki-ken-tai__title Tai
+              p.ki-ken-tai__body Body 
         
       div.block.row.center
         div.col-xs-8.col-xs-offset-2

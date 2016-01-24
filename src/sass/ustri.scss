@@ -70,4 +70,24 @@ body {
 
 .ki-ken-tai {
   padding-bottom: 2em;
+
+  &__kanji {
+    height: 10em;
+  }
+
+  &__title {
+    font-size: 1.4em;
+  }
+
+}
+
+.kikyo-mon {
+  padding-bottom: 2em;
+}
+
+
+.katana-image {
+  width: 100%;
+  max-width:34em;
+  padding-top: 5em;
 }

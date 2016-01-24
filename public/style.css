@@ -499,6 +499,7 @@ th {
 
 .block__sub-title {
   font-size: 1.4em;
+  margin: 0;
 }
 
 .block__title--underline {
@@ -581,4 +582,22 @@ body {
 
 .ki-ken-tai {
   padding-bottom: 2em;
+}
+
+.ki-ken-tai__kanji {
+  height: 10em;
+}
+
+.ki-ken-tai__title {
+  font-size: 1.4em;
+}
+
+.kikyo-mon {
+  padding-bottom: 2em;
+}
+
+.katana-image {
+  width: 100%;
+  max-width: 34em;
+  padding-top: 5em;
 }
