@@ -426,7 +426,7 @@ th {
 }
 
 .landing-page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/honbu.jpg");
+  background-image: url("images/honbu.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -441,7 +441,21 @@ th {
   bottom: 0;
   left: 0;
   font-weight: bold;
-  padding: 0.5em 0.5em 1.5em 4em;
+  padding: 0.5em 1em 0.5em 4em;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.landing-page__title:before {
+  background-image: url("images/kikyo-true-white.png");
+  content: "";
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 24px;
+  top: 8px;
 }
 
 .landing-page__title--main,
@@ -537,7 +551,8 @@ body {
 .learn-more {
   border: 5px solid #263238;
   display: inline-block;
-  padding: .5em;
+  padding: .7em;
+  font-size: 1.1em;
   font-weight: bold;
   transition: all 0.2s ease-in;
 }
@@ -551,4 +566,19 @@ body {
   background: #263238;
   color: #CFD8DC;
   border-color: transparent;
+}
+
+.learn-more--light {
+  border-color: #E0E0E0;
+  color: #E0E0E0;
+}
+
+.learn-more--light:hover, .learn-more--light:focus {
+  background: #E0E0E0;
+  border-color: #E0E0E0;
+  color: #263238;
+}
+
+.ki-ken-tai {
+  padding-bottom: 2em;
 }

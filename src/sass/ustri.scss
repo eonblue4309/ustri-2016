@@ -40,7 +40,8 @@ body {
 .learn-more {
   border: 5px solid $primary-dark;
   display: inline-block;
-  padding:.5em;
+  padding:.7em;
+  font-size: 1.1em;
   font-weight: bold;
   transition: all 0.2s ease-in;
 
@@ -54,4 +55,19 @@ body {
     color:$blue-grey-100;
     border-color: transparent;
   }
+
+  &--light {
+    border-color:$gray-300;
+    color: $gray-300;
+
+    &:hover, &:focus {
+      background: $gray-300;
+      border-color: $gray-300;
+      color: $primary-dark;
+    }
+  }
+}
+
+.ki-ken-tai {
+  padding-bottom: 2em;
 }

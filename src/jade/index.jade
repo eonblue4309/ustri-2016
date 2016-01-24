@@ -13,6 +13,7 @@ html(lang="en")
     div.site-wrapper.container-fluid
 
       header.site-header
+        //- TODO: fix the scaling of the background image
         a.site-nav__link(href="#") Home
         nav.site-nav
           a.site-nav__link(href="/training.html") Training Information
@@ -20,7 +21,7 @@ html(lang="en")
           a.site-nav__link(href="/resources.html") Resources
 
       div.landing-page.row
-        h1.landing-page__title.center
+        h1.landing-page__title
           span.landing-page__title--main United States
           span.landing-page__title--main Tamiya Ryu Iaijutsu
 
@@ -32,30 +33,17 @@ html(lang="en")
             p The United States Tamiya Ryu Iaijustu Ogranization is an official branch of the Tamiya Ryu Iaijutsu Genwakai and is headquarted in East Lansing, Michigan with a branch dojo located in Clarkston, Michigan.
 
             p We are the official representatives of this 400+ year old koryu art in the United States. Here you will find the history of both Tamiya Ryu and its history in the United States as well as information on where to find a dojo and how to join. We hope to see you on the dojo floor soon!
+            
+            a(href="#").learn-more Learn more
 
       div.block.row.center
         div.col-xs-12
-          h2.block__title.block__title--underline Learn About Japanese Swordsmanship
+          article.block__content
+            h2.block__title.block__title--underline Learn About Japanese Swordsmanship
 
-          p Train your body and mind. Tamiya Ryu is a koryu (literally, "old school") sword art not taught outside Japan until recently. The United States Tamiya Ryu Iaijutsu Orgranization is the only official group practicing this art in America.
+            p Train your body and mind. Tamiya Ryu is a koryu (literally, "old school") sword art not taught outside Japan until recently. The United States Tamiya Ryu Iaijutsu Orgranization is the only official group practicing this art in America.
 
-        div.col-xs-8.col-xs-offset-2.center.col-md-4.col-md-offset-0
-          img(src="https://s-media-cache-ak0.pinimg.com/236x/04/31/b3/0431b3bd52ae193d4789c02f93d9838c.jpg")
-          h3.block__sub-title Ki
-
-          p Iai is performed solo and focuses on mindfulness
-
-        div.col-xs-8.col-xs-offset-2.center.col-md-4.col-md-offset-0
-          img(src="https://s-media-cache-ak0.pinimg.com/236x/04/31/b3/0431b3bd52ae193d4789c02f93d9838c.jpg")
-          h3.block__sub-title Ken
-
-          p The sword is a symbol ...
-
-        div.col-xs-8.col-xs-offset-2.center.col-md-4.col-md-offset-0
-          img(src="https://s-media-cache-ak0.pinimg.com/236x/04/31/b3/0431b3bd52ae193d4789c02f93d9838c.jpg")
-          h3.block__sub-title Tai
-
-          p Learning how to move properly for the given situtation
+        
 
       div.block.block--light.row.what-is-iaijutsu.center
         div.col-xs-12
@@ -97,8 +85,33 @@ html(lang="en")
           
           p Emphasis is placed on basic techniques. To proper learna kata means studying 1) how to cut using the scabbard opening (sayaguchi) and 2) how to use the scabbard hand (sayate).
           
+          img(src="images/mon.svg").ki-ken-tai
+          
           p Occasionally students will also practice Kenshibu - a traditional Japanese dance utilizing sword and fan. Kenshibu is performed to the accompaniment of poems (sung in a style called Shigin) that depict famous events in Japanese history.
           
+          a(href="#").learn-more.learn-more--light Learn more
+      
+      div.block.row.center
+        //- TODO: limit the max width of this section
+        div.block__content
+          div.col-xs-8.col-xs-offset-2.center.col-md-4.col-md-offset-0
+            img(src="images/ki-kanji.svg").ki-ken-tai
+            h3.block__sub-title Ki
+
+            p Spirit
+
+          div.col-xs-8.col-xs-offset-2.center.col-md-4.col-md-offset-0
+            img(src="images/ken-kanji.svg").ki-ken-tai
+            h3.block__sub-title Ken
+
+            p Sword
+
+          div.col-xs-8.col-xs-offset-2.center.col-md-4.col-md-offset-0
+            img(src="images/tai-kanji.svg").ki-ken-tai
+            h3.block__sub-title Tai
+
+            p Body
+        
       div.block.row.center
         div.col-xs-8.col-xs-offset-2
           h2.block__title.block__title--underline Locations
