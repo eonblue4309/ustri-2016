@@ -20,12 +20,12 @@
 
   &:before {
     background-image: url("images/kikyo-true-white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     content: "";
     display: inline-block;
     width: 2.5em;
     height: 2.5em;
-    background-size: contain;
-    background-repeat: no-repeat;
     position: absolute;
     left: 24px;
     top: 8px;

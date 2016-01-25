@@ -398,17 +398,24 @@ th {
 }
 
 .site-header {
-  border-bottom: 4px solid #263238;
+  border: 4px solid #263238;
+  border-left: 0;
+  width: 56%;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  bottom: 0;
   z-index: 1000;
   background: white;
+  transform: translateX(-100%);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease;
+  z-index: 2000;
 }
 
-.site-nav {
-  float: right;
+.site-header--open {
+  transform: translateX(0);
 }
 
 .site-nav__link {
@@ -416,7 +423,7 @@ th {
   padding: 1.5em 2em;
   color: #263238;
   font-weight: bold;
-  display: inline-block;
+  display: block;
 }
 
 .site-nav__link:focus, .site-nav__link:hover {
@@ -447,12 +454,12 @@ th {
 
 .landing-page__title:before {
   background-image: url("images/kikyo-true-white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   content: "";
   display: inline-block;
   width: 2.5em;
   height: 2.5em;
-  background-size: contain;
-  background-repeat: no-repeat;
   position: absolute;
   left: 24px;
   top: 8px;
@@ -545,8 +552,8 @@ body {
 }
 
 .what-is-iaijutsu__kanji {
-  width: 55%;
-  padding: 2em;
+  width: 80%;
+  padding: 2em 0;
 }
 
 .learn-more {
@@ -585,7 +592,7 @@ body {
 }
 
 .ki-ken-tai__kanji {
-  height: 10em;
+  height: 7em;
 }
 
 .ki-ken-tai__title {
@@ -593,11 +600,78 @@ body {
 }
 
 .kikyo-mon {
-  padding-bottom: 2em;
+  padding: 2em 0;
+  width: 70%;
 }
 
 .katana-image {
   width: 100%;
   max-width: 34em;
   padding-top: 5em;
+}
+
+.mobile-nav-header {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.mobile-nav-header div {
+  float: left;
+}
+
+.mobile-nav-header:before {
+  background: pink;
+  float: left;
+  width: 3em;
+  height: 3em;
+  margin-right: 0.5em;
+  content: "";
+  display: inline-block;
+  background-image: url("images/kikyo-true-white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 5px solid #263238;
+  width: 100%;
+  height: 70px;
+  background: white;
+  z-index: 1000;
+}
+
+.mobile-nav__menu-button {
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0 1em 0 3em;
+  font-weight: bold;
+  height: 100%;
+  font-size: 1.3em;
+  position: relative;
+}
+
+.mobile-nav__menu-button:before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 19px;
+  bottom: 0.21em;
+  width: 34px;
+  height: 30px;
+  background: linear-gradient(to bottom, #263238, #263238 20%, transparent 20%, transparent 40%, #263238 40%, #263238 60%, transparent 60%, transparent 80%, #263238 80%, #263238 100%);
+}
+
+.overlay--enabled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1001;
+  background: rgba(0, 0, 0, 0.5);
 }

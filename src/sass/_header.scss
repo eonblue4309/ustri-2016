@@ -1,23 +1,37 @@
 .site-header {
-  border-bottom: 4px solid $primary-dark;
+  // border-bottom: 4px solid $primary-dark;
+  border: 4px solid $primary-dark;
+  border-left: 0;
+  width: 56%;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  bottom: 0;
   z-index: 1000;
   background: white;
+  transform: translateX(-100%);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+  transition: all 0.5s ease;
+  z-index: 2000;
+
+
+  &--open {
+    transform: translateX(0);
+  }
 }
 
-.site-nav {
-  float: right;
-}
+// .site-nav {
+//   float: right;
+// }
 
 .site-nav__link {
   font-size: 1.1em;
   padding: 1.5em 2em;
   color: $primary-dark;
   font-weight: bold;
-  display: inline-block;
+  // display: inline-block;
+  display: block;
 
   &:focus,
   &:hover {
