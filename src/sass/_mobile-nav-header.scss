@@ -1,0 +1,23 @@
+.mobile-nav-header {
+
+  font-size: 1.2em;
+  font-weight: bold;
+
+
+  div {
+    float: left;
+  }
+
+  &:before {
+    background: pink;
+    float: left;
+    width: 3em;
+    height: 3em;
+    margin-right: 0.5em;
+    content: "";
+    display: inline-block;
+    background-image: url("images/kikyo-true-white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

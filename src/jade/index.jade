@@ -15,7 +15,7 @@ html(lang="en")
       nav.mobile-nav
         button(data-menu).mobile-nav__menu-button menu
       
-      header.site-header.site-header
+      header.site-header
         //- TODO: fix the scaling of the background image
         
         //- TODO: keep this?
@@ -31,8 +31,9 @@ html(lang="en")
 
       div.landing-page.row
         h1.landing-page__title
-          span.landing-page__title--main United States
-          span.landing-page__title--main Tamiya Ryu Iaijutsu
+          span.landing-page__title-container
+            div.landing-page__title--main United States
+            div.landing-page__title--main Tamiya Ryu Iaijutsu
 
       div.block.block--light.row.center
           div.col-xs-12
@@ -104,24 +105,24 @@ html(lang="en")
       
       div.block.row.center
         //- TODO: limit the max width of this section
-        div.block__content
-          div.col-xs-8.col-xs-offset-2.center.col-md-4.col-md-offset-0
+        div.block__content.ki-ken-tai-section
+          div.col-xs-8.col-xs-offset-2.center.col-sm-4.col-sm-offset-0
             .ki-ken-tai
               img(src="images/ki-kanji.svg").ki-ken-tai__kanji
               h3.ki-ken-tai__title Ki
-              p.ki-ken-tai__body Spirit
+              p.ki-ken-tai__body Spirit. Here is something about ki. It's not really a mystical thing, but more a direction of focus and engery.
 
-          div.col-xs-8.col-xs-offset-2.center.col-md-4.col-md-offset-0
+          div.col-xs-8.col-xs-offset-2.center.col-sm-4.col-sm-offset-0
             .ki-ken-tai
               img(src="images/ken-kanji.svg").ki-ken-tai__kanji
               h3.ki-ken-tai__title Ken
-              p.ki-ken-tai__body Sword
+              p.ki-ken-tai__body Sword. As a martial way, the sword is used as a vechile for personal development. And something more about the sword that's pretty cool sounding.
 
-          div.col-xs-8.col-xs-offset-2.center.col-md-4.col-md-offset-0
+          div.col-xs-8.col-xs-offset-2.center.col-sm-4.col-sm-offset-0
             .ki-ken-tai
               img(src="images/tai-kanji.svg").ki-ken-tai__kanji
               h3.ki-ken-tai__title Tai
-              p.ki-ken-tai__body Body 
+              p.ki-ken-tai__body Body. Something that we should say about what training the body means in iai practice.
         
       div.block.row.center
         div.col-xs-8.col-xs-offset-2

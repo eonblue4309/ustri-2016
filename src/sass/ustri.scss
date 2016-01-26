@@ -16,9 +16,12 @@ $gray-900: #212121;
 }
 
 @import "normalize";
-@import "header";
+@import "site-nav";
 @import "landing-page";
 @import "block";
+@import "mobile-nav";
+@import "learn-more";
+@import "kanji-mon-and-stuff";
 @import "util";
 
 
@@ -30,134 +33,6 @@ body {
 
 .site-wrapper {
   padding-top: 70px
-}
-
-.what-is-iaijutsu__kanji {
-  // width: 55%;
-  width: 80%;
-  padding: 2em 0;
-}
-
-.learn-more {
-  border: 5px solid $primary-dark;
-  display: inline-block;
-  padding:.7em;
-  font-size: 1.1em;
-  font-weight: bold;
-  transition: all 0.2s ease-in;
-
-  &, &:hover, &:focus {
-    color: $primary-dark;
-    text-decoration: none;
-  }
-
-  &:hover, &:focus {
-    background: $primary-dark;
-    color:$blue-grey-100;
-    border-color: transparent;
-  }
-
-  &--light {
-    border-color:$gray-300;
-    color: $gray-300;
-
-    &:hover, &:focus {
-      background: $gray-300;
-      border-color: $gray-300;
-      color: $primary-dark;
-    }
-  }
-}
-
-.ki-ken-tai {
-  padding-bottom: 2em;
-
-  &__kanji {
-    // height: 10em;
-    height: 7em;
-  }
-
-  &__title {
-    font-size: 1.4em;
-  }
-
-}
-
-.kikyo-mon {
-  padding: 2em 0;
-  width: 70%;
-}
-
-
-.katana-image {
-  width: 100%;
-  max-width:34em;
-  padding-top: 5em;
-}
-
-.mobile-nav-header {
-
-  font-size: 1.2em;
-  font-weight: bold;
-
-
-  div {
-    float: left;
-  }
-
-  &:before {
-    background: pink;
-    float: left;
-    width: 3em;
-    height: 3em;
-    margin-right: 0.5em;
-    content: "";
-    display: inline-block;
-    background-image: url("images/kikyo-true-white.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-
-.mobile-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 5px solid $primary-dark;
-  width: 100%;
-  height: 70px;
-  background: white;
-  z-index: 1000;
-}
-
-.mobile-nav__menu-button {
-  background: none;
-  border: 0;
-  margin: 0;
-  padding: 0 1em 0 3em;
-  font-weight: bold;
-  height: 100%;
-  font-size: 1.3em;
-  position: relative;
-
-  &:before {
-    content: "";
-    position: absolute;
-    left: 13px;
-    top: 19px;
-    bottom: 0.21em;
-    width: 34px;
-    height: 30px;
-    background: linear-gradient(
-      to bottom,
-      $primary-dark, $primary-dark 20%,
-      transparent 20%, transparent 40%,
-      $primary-dark 40%, $primary-dark 60%,
-      transparent 60%, transparent 80%,
-      $primary-dark 80%, $primary-dark 100%
-    );
-  }
 }
 
 .overlay--enabled {

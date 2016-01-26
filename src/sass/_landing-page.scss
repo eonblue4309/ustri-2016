@@ -1,5 +1,4 @@
 .landing-page {
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/honbu.jpg");
   background-image:url("images/honbu.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,33 +7,26 @@
   position: relative;
 }
 
+.landing-page__title-container {
+  display: inline-block;
+  background-image: url("images/kikyo-true-white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 2.5em;
+}
+
 .landing-page__title {
   margin: 0;
   color: white;
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
+  text-align: center;
   font-weight: bold;
-  padding: 0.5em 1em 0.5em 4em;
+  padding: 0.5em 1em;
   background: rgba(0,0,0,0.3);
-
-  &:before {
-    background-image: url("images/kikyo-true-white.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    content: "";
-    display: inline-block;
-    width: 2.5em;
-    height: 2.5em;
-    position: absolute;
-    left: 24px;
-    top: 8px;
-  }
-}
-
-.landing-page__title--main,
-.landing-page__title--sub {
-  display: block;
 }
 
 .landing-page__title--sub {
@@ -44,4 +36,10 @@
 .pink {
   background: pink;
   height: 200px;
+}
+
+@media (min-width: 570px) {
+  .landing-page__title {
+    right: auto;
+  }
 }
