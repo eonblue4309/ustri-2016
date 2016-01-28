@@ -9,6 +9,7 @@ html(lang="en")
     link(href="http://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css")
     link(rel="stylesheet", href="/style.css", type="text/css")
   body
+    //- TODO fix all the imgs - need width/height attributes
     div.overlay
     div.site-wrapper.container-fluid
       
@@ -45,6 +46,37 @@ html(lang="en")
             p We are the official representatives of this 400+ year old koryu art in the United States. Here you will find the history of both Tamiya Ryu and its history in the United States as well as information on where to find a dojo and how to join. We hope to see you on the dojo floor soon!
             
             a(href="#").learn-more Learn more
+            
+      div.block.row.center
+        div.col-xs-8.col-xs-offset-2
+          h2.block__title.block__title--underline Locations
+
+        div.col-xs-10.col-xs-offset-1.block__content
+          div.row
+
+            div.col-xs-12.col-sm-6
+              h3.block__sub-title East Lansing, Michigan
+              
+              div.media.media--center.media--max-width
+                img(src="images/east-lansing-location.jpg").media__image
+                div.media__panel
+                  h4.media__title Michigan Honbu Dojo
+                  p.media__body The Michigan Honbu dojo is the headquarters for Tamiya Ryu Iajiutsu operations in the United States. Surrounded by a beautiful Japanese garden, this traditional dojo was built from plans based on a traditional Japanese training hall.
+                  
+                  div.center
+                    a(href="#").media__cta Learn more
+              
+            div.col-xs-12.col-sm-6
+              h3.block__sub-title Clarkston, Michigan
+              
+              div.media.media--center.media--max-width
+                img(src="images/clarkston-location.jpg").media__image
+                div.media__panel
+                  h4.media__title Southeast Michigan Dojo
+                  p.media__body The Southeast Michigan Branch dojo holds class at Independence Parks and Recreation's Bay Court Park facility.
+                  
+                  div.center
+                    a(href="#").media__cta Learn more
 
       div.block.row.center
         div.col-xs-12
@@ -123,22 +155,6 @@ html(lang="en")
               img(src="images/tai-kanji.svg").ki-ken-tai__kanji
               h3.ki-ken-tai__title Tai
               p.ki-ken-tai__body Body. Something that we should say about what training the body means in iai practice.
-        
-      div.block.row.center
-        div.col-xs-8.col-xs-offset-2
-          h2.block__title.block__title--underline Locations
-
-        div.col-xs-10.col-xs-offset-1
-          div.row.center
-            div.col-xs-12.col-md-6.col-md-offset-0
-              h3.block__sub-title East Lansing, Michigan
-
-              p The Michigan Honbu dojo is the headquarters for Tamiya Ryu Iajiutsu operations in the United States. Surrounded by a beautiful Japanese garden, this traditional dojo was built from plans based on a traditional Japanese training hall.
-
-            div.col-xs-12.col-md-6.col-md-offset-0
-              h3.block__sub-title Clarkston, Michigan
-
-              p The Southeast Michigan Branch dojo holds class at Independence Parks and Recreation's Bay Court Park facility.
 
 
     script(src="//localhost:35729/livereload.js")
