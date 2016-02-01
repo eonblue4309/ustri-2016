@@ -3,8 +3,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 350px;
+  height: 250px;
   position: relative;
+  -webkit-filter: grayscale(0.3);
+  filter: grayscale(0.3);
 }
 
 .landing-page__title-container {
@@ -17,6 +19,7 @@
 }
 
 .landing-page__title {
+  font-size: 1.5em;
   margin: 0;
   color: white;
   position: absolute;
@@ -33,13 +36,27 @@
   font-size: 0.8em;
 }
 
-.pink {
-  background: pink;
-  height: 200px;
-}
-
 @media (min-width: 570px) {
   .landing-page__title {
     right: auto;
+    font-size: 1.8em;
   }
+}
+
+@media (min-width: 768px) {
+  .landing-page {
+    height: 400px;
+  }
+
+  .landing-page__title {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 1045px) {
+  .landing-page {
+    height: 500px;
+  }
+
+  // align title to lower center ish
 }

@@ -419,20 +419,6 @@ th {
   transform: translateX(0);
 }
 
-.site-nav__link {
-  font-size: 1.1em;
-  padding: 1.5em 2em;
-  color: #263238;
-  font-weight: bold;
-  display: block;
-}
-
-.site-nav__link:focus, .site-nav__link:hover {
-  color: white;
-  text-decoration: none;
-  background-color: #263238;
-}
-
 @media (min-width: 768px) {
   .site-header {
     border: 0;
@@ -443,11 +429,31 @@ th {
     width: 100%;
     bottom: auto;
   }
-  .site-nav {
-    float: right;
-  }
-  .site-nav__link {
+}
+
+.site-nav__link, .footer-nav__link {
+  font-size: 1.1em;
+  padding: 1.5em 2em;
+  color: #263238;
+  font-weight: bold;
+  display: block;
+}
+
+.site-nav__link:focus, .footer-nav__link:focus, .site-nav__link:hover, .footer-nav__link:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #263238;
+}
+
+@media (min-width: 768px) {
+  .site-nav__link, .footer-nav__link {
     display: inline-block;
+  }
+  .site-nav__link--home {
+    float: left;
+  }
+  .site-nav__pages {
+    float: right;
   }
 }
 
@@ -456,8 +462,10 @@ th {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 350px;
+  height: 250px;
   position: relative;
+  -webkit-filter: grayscale(0.3);
+  filter: grayscale(0.3);
 }
 
 .landing-page__title-container {
@@ -470,6 +478,7 @@ th {
 }
 
 .landing-page__title {
+  font-size: 1.5em;
   margin: 0;
   color: white;
   position: absolute;
@@ -486,14 +495,25 @@ th {
   font-size: 0.8em;
 }
 
-.pink {
-  background: pink;
-  height: 200px;
-}
-
 @media (min-width: 570px) {
   .landing-page__title {
     right: auto;
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-page {
+    height: 400px;
+  }
+  .landing-page__title {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 1045px) {
+  .landing-page {
+    height: 500px;
   }
 }
 
@@ -514,7 +534,7 @@ th {
 }
 
 .block__title, .block__sub-title {
-  font-size: 1.8em;
+  font-size: 1.5em;
   text-transform: capitalize;
   margin-top: 0;
   margin-bottom: 1em;
@@ -528,7 +548,7 @@ th {
 }
 
 .block__title--underline {
-  padding: 0 1em 1em;
+  padding: 0 0 1em 0;
   display: inline-block;
   border-bottom: 3px solid #263238;
 }
@@ -568,10 +588,9 @@ th {
   background: none;
   border: 0;
   margin: 0;
-  padding: 0 1em 0 3em;
+  padding-left: 50px;
   font-weight: bold;
   height: 100%;
-  font-size: 1.2em;
   position: relative;
 }
 
@@ -658,51 +677,6 @@ th {
   padding-top: 5em;
 }
 
-.spacer {
-  margin: 2000px;
-}
-
-.center {
-  text-align: center;
-}
-
-body {
-  color: #263238;
-  font-family: 'Noto Sans', sans-serif;
-}
-
-.site-wrapper {
-  padding-top: 70px;
-}
-
-.overlay--enabled {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 1001;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.location-image {
-  background-image: url("images/bay-court.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: relative;
-  height: 400px;
-  filter: grayscale(0.2);
-}
-
-.location-image__title {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0;
-}
-
 .media {
   position: relative;
   overflow: hidden;
@@ -722,11 +696,6 @@ body {
   -webkit-filter: grayscale(0.5);
   filter: grayscale(1);
   transition: all 0.4s ease;
-}
-
-.media__image:hover, .media__image:focus {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
 }
 
 .media__panel {
@@ -780,4 +749,63 @@ body {
 .media__body {
   padding: 0 !important;
   max-width: initial !important;
+}
+
+.spacer {
+  margin: 2000px;
+}
+
+.center {
+  text-align: center;
+}
+
+body {
+  color: #263238;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.site-wrapper {
+  padding-top: 70px;
+}
+
+.overlay--enabled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1001;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.location-image {
+  background-image: url("images/bay-court.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  height: 400px;
+  filter: grayscale(0.2);
+}
+
+.location-image__title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+.location-block {
+  padding-bottom: 85px;
+}
+
+.footer-nav__link {
+  color: white;
+  border-bottom: 5px solid transparent;
+}
+
+.footer-nav__link:hover, .footer-nav__link:focus {
+  background-color: transparent;
+  border-bottom-color: white;
 }

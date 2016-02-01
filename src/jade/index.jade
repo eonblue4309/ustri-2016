@@ -10,6 +10,7 @@ html(lang="en")
     link(rel="stylesheet", href="/style.css", type="text/css")
   body
     //- TODO fix all the imgs - need width/height attributes
+    //- TODO move the mobile nav to the bottom?
     div.overlay
     div.site-wrapper.container-fluid
       
@@ -19,16 +20,13 @@ html(lang="en")
       header.site-header
         //- TODO: fix the scaling of the background image
         
-        //- TODO: keep this?
-        //- div.mobile-nav-header.clearfix
-        //-   div United States
-        //-   div Tamiya Ryu Iaijutsu
-          
-        a.site-nav__link(href="#") Home
         nav.site-nav
-          a.site-nav__link(href="/training.html") Training Information
-          a.site-nav__link(href="/history.html") History
-          a.site-nav__link(href="/resources.html") Resources
+          a.site-nav__link(href="#") Home
+          div.site-nav__pages
+            a.site-nav__link(href="/training.html") Training Information
+            a.site-nav__link(href="/history.html") History
+            a.site-nav__link(href="/resources.html") Resources
+            a.site-nav__link(href="/contact.html") Contact Us
 
       div.landing-page.row
         h1.landing-page__title
@@ -54,19 +52,19 @@ html(lang="en")
         div.col-xs-10.col-xs-offset-1.block__content
           div.row
 
-            div.col-xs-12.col-sm-6
+            div.col-xs-12.col-sm-6.location-block
               h3.block__sub-title East Lansing, Michigan
               
               div.media.media--center.media--max-width
                 img(src="images/east-lansing-location.jpg").media__image
                 div.media__panel
                   h4.media__title Michigan Honbu Dojo
-                  p.media__body The Michigan Honbu dojo is the headquarters for Tamiya Ryu Iajiutsu operations in the United States. Surrounded by a beautiful Japanese garden, this traditional dojo was built from plans based on a traditional Japanese training hall.
+                  p.media__body The Michigan Honbu dojo is the headquarters for Tamiya Ryu Iajiutsu operations in the United States.
                   
                   div.center
                     a(href="#").media__cta Learn more
               
-            div.col-xs-12.col-sm-6
+            div.col-xs-12.col-sm-6.location-block
               h3.block__sub-title Clarkston, Michigan
               
               div.media.media--center.media--max-width
@@ -78,16 +76,18 @@ html(lang="en")
                   div.center
                     a(href="#").media__cta Learn more
 
-      div.block.row.center
-        div.col-xs-12
-          article.block__content
-            h2.block__title.block__title--underline Learn About Japanese Swordsmanship
-            
-          div.col-xs-10.col-xs-offset-1.col-md-6.col-md-offset-3
-            p Train your body and mind. Tamiya Ryu is a koryu (literally, "old school") sword art not taught outside Japan until recently. The United States Tamiya Ryu Iaijutsu Orgranization is the only official group practicing this art in America.
-            
-            img(src="images/katana.svg").katana-image
-        
+          div.row.center
+            div.col-xs-12
+              article.block__content
+                  
+                div.col-xs-10.col-xs-offset-1.col-md-6.col-md-offset-3
+                  h2.block__title.block__title--underline Learn About Japanese Swordsmanship
+                  p Train your body and mind. Tamiya Ryu is a koryu (literally, "old school") sword art not taught outside Japan until recently. The United States Tamiya Ryu Iaijutsu Orgranization is the only official group practicing this art in America.
+                  
+                  a(href="/contact.html").learn-more Contact Us
+                  
+                  img(src="images/katana.svg").katana-image
+          
 
       div.block.block--light.row.what-is-iaijutsu.center
         div.col-xs-12
@@ -127,7 +127,7 @@ html(lang="en")
           
           p Training focuses on the harmonization of mind, body, and spirit through the practice and performance of kata (pre-arranged techniques). Techniques are practiced with the philosophy of the "sword which gives life (Katsujin no Ken)," as opposed to the "sword which takes life (Satsujin no Ken)."
           
-          p Emphasis is placed on basic techniques. To proper learna kata means studying 1) how to cut using the scabbard opening (sayaguchi) and 2) how to use the scabbard hand (sayate).
+          p Emphasis is placed on basic techniques. To properly learn kata means studying 1) how to cut using the scabbard opening (sayaguchi) and 2) how to use the scabbard hand (sayate).
           
           img(src="images/mon.svg").kikyo-mon
           
@@ -142,21 +142,32 @@ html(lang="en")
             .ki-ken-tai
               img(src="images/ki-kanji.svg").ki-ken-tai__kanji
               h3.ki-ken-tai__title Ki
-              p.ki-ken-tai__body Spirit. Here is something about ki. It's not really a mystical thing, but more a direction of focus and engery.
+              p.ki-ken-tai__body Spirit. Tamiya Ryu trains the spirit and aims to create a harmonious character.
 
           div.col-xs-8.col-xs-offset-2.center.col-sm-4.col-sm-offset-0
             .ki-ken-tai
               img(src="images/ken-kanji.svg").ki-ken-tai__kanji
               h3.ki-ken-tai__title Ken
-              p.ki-ken-tai__body Sword. As a martial way, the sword is used as a vechile for personal development. And something more about the sword that's pretty cool sounding.
-
+              p.ki-ken-tai__body Sword. The sword of Tamiya Ryu is one that gives life or katsujin no ken.
+              
           div.col-xs-8.col-xs-offset-2.center.col-sm-4.col-sm-offset-0
             .ki-ken-tai
               img(src="images/tai-kanji.svg").ki-ken-tai__kanji
               h3.ki-ken-tai__title Tai
-              p.ki-ken-tai__body Body. Something that we should say about what training the body means in iai practice.
-
-
+              p.ki-ken-tai__body Body. By harmonizing the spirit, sword, and body, the practice of Iaijutsu becomes dignified.
+      div.block.block--darkest.row.center
+        div.block__content
+          
+          nav.footer-nav
+            a.footer-nav__link(href="#") Home
+            a.footer-nav__link(href="/training.html") Training Information
+            a.footer-nav__link(href="/history.html") History
+            a.footer-nav__link(href="/resources.html") Resources
+            a.footer-nav__link(href="/contact.html") Contact Us
+          
+          p.site-by-line Site design and built by #[a(href="#") James Russell]
+        
+        
     script(src="//localhost:35729/livereload.js")
     script(src="https://code.jquery.com/jquery-1.12.0.min.js")
     script(src="site.js")

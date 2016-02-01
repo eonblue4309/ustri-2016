@@ -15,7 +15,7 @@
 }
 
 .block__title {
-  font-size: 1.8em;
+  font-size: 1.5em;
   text-transform: capitalize;
   margin-top: 0;
   margin-bottom: 1em;
@@ -30,7 +30,7 @@
 }
 
 .block__title--underline {
-  padding: 0 1em 1em;
+  padding: 0 0 1em 0;
   display: inline-block;
   border-bottom: 3px solid $blue-grey-900;
 }

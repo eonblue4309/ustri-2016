@@ -19,6 +19,21 @@
   }
 }
 
+@media (min-width: 768px) {
+  .site-header {
+    border: 0;
+    border-bottom: 4px solid $primary-dark;
+    transform: translateX(0);
+    box-shadow: none;
+    transition: none;
+    width: 100%;
+    bottom: auto;
+  }
+}
+
+
+
+
 .site-nav__link {
   font-size: 1.1em;
   padding: 1.5em 2em;
@@ -35,21 +50,17 @@
 }
 
 @media (min-width: 768px) {
-  .site-header {
-    border: 0;
-    border-bottom: 4px solid $primary-dark;
-    transform: translateX(0);
-    box-shadow: none;
-    transition: none;
-    width: 100%;
-    bottom: auto;
-  }
-
-  .site-nav {
-    float: right;
-  }
 
   .site-nav__link {
     display: inline-block;
   }
+
+  .site-nav__link--home {
+    float: left;
+  }
+
+  .site-nav__pages {
+    float: right;
+  }
+
 }
