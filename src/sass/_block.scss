@@ -48,6 +48,10 @@
 .block--darkest {
   background: $gray-900;
   color: #F5F5F5;
+
+  a {
+    color: white;
+  }
 }
 
 .block__content {

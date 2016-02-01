@@ -437,6 +437,7 @@ th {
   color: #263238;
   font-weight: bold;
   display: block;
+  text-decoration: none;
 }
 
 .site-nav__link:focus, .footer-nav__link:focus, .site-nav__link:hover, .footer-nav__link:hover {
@@ -566,6 +567,10 @@ th {
 .block--darkest {
   background: #212121;
   color: #F5F5F5;
+}
+
+.block--darkest a {
+  color: white;
 }
 
 .block__content {
@@ -762,6 +767,10 @@ th {
 body {
   color: #263238;
   font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+  text-decoration: underline;
 }
 
 .site-wrapper {

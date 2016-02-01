@@ -31,15 +31,13 @@
   }
 }
 
-
-
-
 .site-nav__link {
   font-size: 1.1em;
   padding: 1.5em 2em;
   color: $primary-dark;
   font-weight: bold;
   display: block;
+  text-decoration: none;
 
   &:focus,
   &:hover {
