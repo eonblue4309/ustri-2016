@@ -75,9 +75,17 @@ a {
   @extend .site-nav__link;
   color: white;
   border-bottom: 5px solid transparent;
+  display: inline-block;
+  padding: 0.5em 1em;
 
   &:hover, &:focus {
     background-color: transparent;
     border-bottom-color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-nav__link {
+    padding: 1.5em 2em;
   }
 }
