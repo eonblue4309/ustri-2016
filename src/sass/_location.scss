@@ -1,0 +1,21 @@
+.location-image {
+  background-image: url("images/bay-court.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  height: 400px;
+  filter: grayscale(0.2);
+
+  &__title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+}
+
+.location-block {
+  padding-bottom: 85px;
+}

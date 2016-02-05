@@ -20,9 +20,14 @@ $gray-900: #212121;
 @import "site-nav";
 @import "landing-page";
 @import "block";
+@import "card";
+@import "footer-nav";
 @import "mobile-nav";
 @import "learn-more";
 @import "kanji-mon-and-stuff";
+@import "location";
+@import "news";
+@import "teaser";
 @import "media";
 @import "util";
 
@@ -48,98 +53,4 @@ a {
   right: 0;
   z-index: 1001;
   background: rgba(0,0,0,0.5);
-}
-
-.location-image {
-  background-image: url("images/bay-court.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: relative;
-  height: 400px;
-  filter: grayscale(0.2);
-
-  &__title {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-  }
-}
-
-.location-block {
-  padding-bottom: 85px;
-}
-
-.footer-nav__link {
-  @extend .site-nav__link;
-  color: white;
-  border-bottom: 5px solid transparent;
-  display: inline-block;
-  padding: 0.5em 1em;
-
-  &:hover, &:focus {
-    background-color: transparent;
-    border-bottom-color: white;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer-nav__link {
-    padding: 1.5em 2em;
-  }
-}
-
-
-.news {
-  list-style: none;
-  padding: 6em 0 3em;
-  margin: 0;
-}
-
-.news__item {
-  padding: 1em 0;
-}
-
-.teaser {
-  color: $primary-dark;
-  border-bottom: 1px solid $primary-dark;
-  text-decoration: none;
-  display: inline-block;
-  padding-bottom: 0.5em;
-
-  &:hover, &:focus {
-    color: $primary-dark;
-    text-decoration: none;
-  }
-}
-
-.teaser__icon:before {
-  @extend .icon-font;
-  font-size: 1.5em;
-}
-
-.teaser__icon--message:before {
-  @extend .icon-typing:before;
-}
-
-.teaser__icon--announcement:before {
-  @extend .icon-megaphone:before;
-}
-
-
-.teaser__heading {
-  font-size: 1.2em;
-  font-weight: bold;
-  display: inline;
-}
-
-.teaser__copy {
-  display: inline;
-}
-
-
-@media (min-width: 768px) {
-
 }

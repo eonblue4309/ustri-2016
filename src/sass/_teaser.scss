@@ -1,0 +1,25 @@
+.teaser {
+  color: $primary-dark;
+  border-bottom: 1px solid $primary-dark;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 0.5em;
+
+  &:hover, &:focus {
+    color: $primary-dark;
+    text-decoration: none;
+  }
+}
+
+.teaser__icon:before {
+  @extend .icon-font;
+  font-size: 1.5em;
+}
+
+.teaser__icon--message:before {
+  @extend .icon-typing:before;
+}
+
+.teaser__icon--announcement:before {
+  @extend .icon-megaphone:before;
+}
