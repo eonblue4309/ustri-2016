@@ -799,7 +799,7 @@ th {
   }
 }
 
-.cta {
+.cta, .media__cta {
   border: 5px solid #263238;
   display: inline-block;
   padding: 0.7em;
@@ -808,12 +808,12 @@ th {
   transition: all 0.2s ease-in;
 }
 
-.cta, .cta:hover, .cta:focus {
+.cta, .media__cta, .cta:hover, .media__cta:hover, .cta:focus, .media__cta:focus {
   color: #263238;
   text-decoration: none;
 }
 
-.cta:hover, .cta:focus {
+.cta:hover, .media__cta:hover, .cta:focus, .media__cta:focus {
   background: #263238;
   color: #CFD8DC;
   border-color: transparent;
