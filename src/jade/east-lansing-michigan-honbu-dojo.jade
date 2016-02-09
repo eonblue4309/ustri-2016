@@ -29,7 +29,16 @@ html(lang="en")
             a.site-nav__link(href="/contact.html") Contact Us
             
       section
-          //- everything in this section should be a partial
+        
+        div.masthead.masthead--content-page.masthead--east-lansing-page.row
+          h1.masthead__title
+            span.masthead__title-container
+              div.masthead__title--main United States
+              div.masthead__title--main Tamiya Ryu Iaijutsu
+              
+            div.masthead__title--sub Training Information
+              //- everything in this section should be a partial
+        
         div.block.block--light.row
           div.col-xs-12.center
             h1.block__title.block__title--underline Michigan Honbu Dojo - East Lansing, Michigan
@@ -40,9 +49,13 @@ html(lang="en")
             p.block__copy All classes are by assignment and are held weekly throughout the year with the exception of a winter weather break - The dojo is unheated and Michigan winters are harsh!
             
             p.block__copy Special classes or changes to this schedule will be discussed in the respective classes. Please note, if there are 5 weeks in a given month, there will be no classes during the fifth week.
-
-            p.block__copy The USTRI Honbu dojo is currently offering a free introductory month of training. No contracts are required. Please see the contact information below to inquire about more details
-        
+            
+            ul.news
+              li.news__item
+                div.card.card--max-width.card--more-padding
+                  h3.card__heading.card__heading--center #[span.card__icon.card__icon--announcement] Announcement
+                  p.card__body The USTRI Honbu dojo is currently offering a free introductory month of training. No contracts are required. Please see the contact information below to inquire about more details
+            
         div.block.row.center
           div.col-xs-8.col-xs-offset-2
             h2.block__title.block__title--underline Training Schedule

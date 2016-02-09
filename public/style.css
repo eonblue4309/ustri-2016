@@ -561,8 +561,7 @@ th {
   }
 }
 
-.landing-page {
-  background-image: url("images/honbu.jpg");
+.masthead {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -572,7 +571,15 @@ th {
   filter: grayscale(0.3);
 }
 
-.landing-page__title-container {
+.masthead--home-page {
+  background-image: url("images/honbu.jpg");
+}
+
+.masthead--east-lansing-page {
+  background-image: url("images/honbu-side-outside.jpg");
+}
+
+.masthead__title-container {
   display: inline-block;
   background-image: url("images/kikyo-true-white.png");
   background-size: contain;
@@ -581,7 +588,7 @@ th {
   padding-left: 2.5em;
 }
 
-.landing-page__title {
+.masthead__title {
   font-size: 1.5em;
   margin: 0;
   color: white;
@@ -595,29 +602,38 @@ th {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.landing-page__title--sub {
-  font-size: 0.8em;
+.masthead__title--sub {
+  font-size: 0.7em;
+  font-style: italic;
+  font-variant: small-caps;
+  text-align: right;
 }
 
 @media (min-width: 570px) {
-  .landing-page__title {
+  .masthead__title {
     right: auto;
     font-size: 1.8em;
   }
 }
 
 @media (min-width: 768px) {
-  .landing-page {
+  .masthead {
     height: 400px;
   }
-  .landing-page__title {
+  .masthead--content-page {
+    height: 250px;
+  }
+  .masthead__title {
     font-size: 2.5em;
   }
 }
 
 @media (min-width: 1045px) {
-  .landing-page {
+  .masthead {
     height: 500px;
+  }
+  .masthead--content-page {
+    height: 250px;
   }
 }
 
@@ -698,10 +714,18 @@ th {
   font-weight: bold;
 }
 
+.card--more-padding {
+  padding: 1em 2em;
+}
+
 .card__heading {
   margin: 0;
   font-size: 1.2em;
   font-weight: bold;
+}
+
+.card__heading--center {
+  text-align: center;
 }
 
 .card__body {
@@ -729,6 +753,9 @@ th {
   }
   .card__body {
     text-align: center;
+  }
+  .card--more-padding {
+    padding: 1em 4em;
   }
 }
 

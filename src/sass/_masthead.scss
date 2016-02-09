@@ -1,5 +1,4 @@
-.landing-page {
-  background-image:url("images/honbu.jpg");
+.masthead {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -7,9 +6,21 @@
   position: relative;
   -webkit-filter: grayscale(0.3);
   filter: grayscale(0.3);
+
+  &--home-page {
+    background-image: url("images/honbu.jpg")
+  }
+
+  &--east-lansing-page {
+    background-image: url("images/honbu-side-outside.jpg");
+  }
+
+  &--content-page {
+
+  }
 }
 
-.landing-page__title-container {
+.masthead__title-container {
   display: inline-block;
   background-image: url("images/kikyo-true-white.png");
   background-size: contain;
@@ -18,7 +29,7 @@
   padding-left: 2.5em;
 }
 
-.landing-page__title {
+.masthead__title {
   font-size: 1.5em;
   margin: 0;
   color: white;
@@ -32,31 +43,42 @@
   background: rgba(0,0,0,0.3);
 }
 
-.landing-page__title--sub {
-  font-size: 0.8em;
+.masthead__title--sub {
+  font-size: 0.7em;
+  font-style: italic;
+  font-variant: small-caps;
+  text-align: right;
 }
 
 @media (min-width: 570px) {
-  .landing-page__title {
+  .masthead__title {
     right: auto;
     font-size: 1.8em;
   }
 }
 
 @media (min-width: 768px) {
-  .landing-page {
+  .masthead {
     height: 400px;
   }
 
-  .landing-page__title {
+  .masthead--content-page {
+    height: 250px
+  }
+
+  .masthead__title {
     font-size: 2.5em;
   }
 }
 
 @media (min-width: 1045px) {
-  .landing-page {
+  .masthead {
     height: 500px;
   }
 
-  // align title to lower center ish
+  .masthead--content-page {
+    height: 250px
+  }
+
+  // TODO align title to lower center ish - maybe
 }

@@ -13,10 +13,18 @@
   }
 }
 
+.card--more-padding {
+  padding: 1em 2em;
+}
+
 .card__heading {
   margin: 0;
   font-size: 1.2em;
   font-weight: bold;
+
+  &--center {
+    text-align: center;
+  }
 }
 
 .card__body {
@@ -55,6 +63,11 @@
   .card__body {
     text-align: center;
   }
+
+  .card--more-padding {
+    padding: 1em 4em;
+  }
+
 }
 
 
