@@ -11,7 +11,7 @@ module.exports = (grunt) ->
           client: false
         files: [
           cwd: 'src/jade'
-          src: ['**/*.jade', '!**/partials/**/*.jade']
+          src: ['*.jade', '!**/partials/**/*.jade']
           dest: 'public'
           expand: true
           ext: '.html'

@@ -1,104 +1,13 @@
 doctype html
 html(lang="en")
   head
-    title Traditional Japanese Swordsmanship | United States Tamiya Ryu Iaijutsu
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    meta(name="description" content="The United States Tamiya Ryu Organization offers classes in traditional Japanese swordsmanship called iaijutsu. There are dojo located in Central and Southeast Michigan.")
-    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
-    link(href="http://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css")
-    link(rel="stylesheet", href="/style.css", type="text/css")
+    include ./partials/head.jade
   body
     //- TODO fix all the imgs - need width/height attributes
     //- TODO move the mobile nav to the bottom?
     div.overlay
     div.site-wrapper.container-fluid
       
-      nav.mobile-nav
-        button(data-menu).mobile-nav__menu-button menu
-      
-      header.site-header
-        //- TODO: fix the scaling of the background image
+      include ./pages/east-lansing-michigan-honbu-dojo.jade
         
-        nav.site-nav
-          a.site-nav__link(href="#") Home
-          div.site-nav__pages
-            a.site-nav__link(href="/training.html") Training Information
-            a.site-nav__link(href="/history.html") History
-            a.site-nav__link(href="/resources.html") Resources
-            a.site-nav__link(href="/contact.html") Contact Us
-            
-      section
-        
-        div.masthead.masthead--content-page.masthead--east-lansing-page.row
-          h1.masthead__title
-            span.masthead__title-container
-              div.masthead__title--main United States
-              div.masthead__title--main Tamiya Ryu Iaijutsu
-              
-            div.masthead__title--sub Training Information
-              //- everything in this section should be a partial
-        
-        div.block.block--light.row
-          div.col-xs-12.center
-            h1.block__title.block__title--underline Michigan Honbu Dojo - East Lansing, Michigan
-            
-          div.col-xs-10.col-xs-offset-1.col-md-6.col-md-offset-3
-            p.block__copy The Michiagan Honbu dojo is the headquarters for Tamiya Ryu Iajiutsu operations in the United States. Surrounded by a beautiful Japanese garden, this traditional dojo was built from plans based on a traditional Japanese training hall.
-          
-            p.block__copy All classes are by assignment and are held weekly throughout the year with the exception of a winter weather break - The dojo is unheated and Michigan winters are harsh!
-            
-            p.block__copy Special classes or changes to this schedule will be discussed in the respective classes. Please note, if there are 5 weeks in a given month, there will be no classes during the fifth week.
-            
-            ul.news
-              li.news__item
-                div.card.card--max-width.card--more-padding
-                  h3.card__heading.card__heading--center #[span.card__icon.icon-megaphone] Announcement
-                  p.card__body The USTRI Honbu dojo is currently offering a free introductory month of training. No contracts are required. Please see the contact information below to inquire about more details
-            
-        div.block.row.center
-          div.col-xs-8.col-xs-offset-2
-            h2.block__title.block__title--underline #[span.icon-calendar] Training Schedule
-
-          div.col-xs-10.col-xs-offset-1.block__content
-            p Saturday, 10:00am - 12:00pm (Mixed Level)
-            p Saturday, 12:30pm - 2:30pm (Advanced)
-          
-            p.block__copy Interested in training at the Honbu dojo? Weekends too busy? Contact us and we may be able to schedule weekday training accommodations. 
-
-            img(src="images/tamiya-ken-kanji.svg").kikyo-mon.center
-            
-        div.block.block--light.row.center
-          div.col-xs-8.col-xs-offset-2
-            h2.block__title.block__title--underline Contact Information
-            
-          div.col-xs-10.col-xs-offset-1.col-md-6.col-md-offset-3
-            div.card
-              div.row
-                div.col-xs-12
-                  span.card__icon.icon-mail
-                div.col-xs-12
-                  div.card__body
-                    div.person
-                      p Thomas Hufnagel (Gensui)
-                      p 5th Degree
-                      p USTRI Director of Operations
-                      p USTRI Honbu Branch Manager
-                      p USTRI Instructor
-                      p Email: hufnagelt@gmail.com
-              
-      footer.block.block--darkest.row.center
-        div.block__content
-          
-          nav.footer-nav
-            a.footer-nav__link(href="#") Home
-            a.footer-nav__link(href="/training.html") Training Information
-            a.footer-nav__link(href="/history.html") History
-            a.footer-nav__link(href="/resources.html") Resources
-            a.footer-nav__link(href="/contact.html") Contact Us
-          
-          p.site-by-line Site design and built by #[a(href="#") James Russell]
-        
-    script(src="//localhost:35729/livereload.js")
-    script(src="https://code.jquery.com/jquery-1.12.0.min.js")
-    script(src="site.js")
+    include ./partials/scripts.jade
