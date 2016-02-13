@@ -717,6 +717,11 @@ th {
   font-weight: bold;
 }
 
+.card--contact-card {
+  max-width: 512px;
+  margin: 0 auto;
+}
+
 .card--more-padding {
   padding: 1em 2em;
 }
@@ -769,6 +774,9 @@ th {
   }
   .card__body {
     text-align: left;
+  }
+  .card--contact-card .card__body {
+    text-align: inherit;
   }
 }
 

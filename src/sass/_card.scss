@@ -13,6 +13,11 @@
   }
 }
 
+.card--contact-card {
+  max-width: 512px;
+  margin: 0 auto;
+}
+
 .card--more-padding {
   padding: 1em 2em;
 }
@@ -79,5 +84,9 @@
 
   .card__body {
     text-align: left;
+  }
+
+  .card--contact-card .card__body {
+    text-align: inherit;
   }
 }
