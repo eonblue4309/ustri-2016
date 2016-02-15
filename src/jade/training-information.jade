@@ -9,24 +9,77 @@ html(lang="en")
     div.site-wrapper.container-fluid
       
       include ./partials/header.jade
+      
+      div.masthead.masthead--content-page.masthead--southeast-michigan-page.row
+        h1.masthead__title
+          span.masthead__title-container
+            div.masthead__title--main United States
+            div.masthead__title--main Tamiya Ryu Iaijutsu
             
-      section(role="main")
-        
-        div.masthead.masthead--content-page.masthead--southeast-michigan-page.row
-          h1.masthead__title
-            span.masthead__title-container
-              div.masthead__title--main United States
-              div.masthead__title--main Tamiya Ryu Iaijutsu
-              
-            div.masthead__title--sub Training Information
-        
+          div.masthead__title--sub Training Information
+      
+      section
         include ./partials/east-lansing-michigan-honbu-dojo.jade
-        
-        div.block.block--darkest.row.center
-          div.col-xs-12
-            img(src="images/mon.svg").kikyo-mon
-        
+      
+      div.block.block--darkest.row.center
+        div.col-xs-12
+          img(src="images/mon.svg").kikyo-mon
+      
+      section
         include ./partials/southeast-michigan-branch-dojo.jade
+      
+      section
+        div.block.block--dark.row.center
+          div.col-xs-12
+            h1.block__title.block__title--underline Instructors
+            
+          div.col-xs-12.block__content
+            div.row
+              div.col-xs-12.col-md-4.col-md-offset-4
+                  
+                div.block__copy
+                  p Michael Alexanian (Gennan Buhaku) - 7th Degree
+                  p USTRI General Manager
+                  p Genwakai Shihan (Head Instructor)
+                  p USTRI Board of Directors
+                  p Email: alexgennan@att.net
+              
+                div.block__copy
+                  p Thomas Hufnagel (Gensui) - 5th Degree
+                  p USTRI Director of Operations
+                  p USTRI Honbu Branch Manager
+                  p USTRI Instructor
+                  p USTRI Board of Directors
+                  p Email: hufnagelt@gmail.com
+                
+                div.block__copy
+                  p William Smith (Genka) - 5th Degree
+                  p USTRI Honbu Assistant Branch Manager
+                  p USTRI Instructor
+                  p USTRI Board of Directors
+                  p Email: alexgennan@att.net
+                
+                div.block__copy
+                  p Douglas Jarrett (Genchi) - 5th Degree
+                  p USTRI Honbu Assistant Branch Manager
+                  p USTRI Instructor
+                  p USTRI Board of Directors
+                  p Email: alexgennan@att.net
+                
+                div.block__copy
+                  p Scott Sier (Genfu) - 5th Degree
+                  p USTRI Southeast Michigan Branch Manager
+                  p USTRI Instructor
+                  p USTRI Board of Directors
+                  p Email: spsier@gmail.com
+                
+                div.block__copy
+                  p Dan Mordan (Genzan) - 5th Degree
+                  p USTRI Southeast Michigan Assistant Branch Manager
+                  p USTRI Instructor
+                  p USTRI Board of Directors
+                  p Email: USTRI-SE-MI@ustamiyaryu.org
+    
               
       include ./partials/footer.jade
         

@@ -686,9 +686,19 @@ th {
   color: #F5F5F5;
 }
 
+.block--dark .block__title, .block--dark .block__sub-title {
+  color: #F5F5F5;
+  border-color: #F5F5F5;
+}
+
 .block--darkest {
   background: #212121;
   color: #F5F5F5;
+}
+
+.block--darkest .block__title, .block--darkest .block__sub-title {
+  color: #E0E0E0;
+  border-color: #E0E0E0;
 }
 
 .block--darkest a {
