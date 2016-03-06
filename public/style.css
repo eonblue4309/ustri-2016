@@ -1097,12 +1097,16 @@ a {
   text-decoration: underline;
 }
 
-blockquote {
+.blockquote {
   padding: 1em 1em 1em 3em;
   margin: 2em 0;
   font-size: inherit;
-  border-left: 3px solid #eee;
+  border-left: 3px solid #E0E0E0;
   font-style: italic;
+}
+
+.blockquote--dark {
+  border-color: #263238;
 }
 
 .site-wrapper {
