@@ -35,6 +35,12 @@
   border-bottom: 3px solid $blue-grey-900;
 }
 
+.block__title--full-width-underline {
+  margin-bottom: 2em;
+  border-bottom: 3px solid;
+  padding-bottom: 10px;
+}
+
 .block__title--light {
   color: $blue-grey-100;
   border-color: $blue-grey-100;
@@ -69,4 +75,8 @@
 
 .block__content {
   padding: 3em 0;
+}
+
+.block--long-copy p {
+  text-indent: 2em;
 }

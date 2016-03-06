@@ -1,0 +1,12 @@
+.genealogy {
+  display: inline-block;
+
+  &__soke-list {
+    line-height: 2em;
+
+    li {
+      min-width: 15em;
+    }
+  }
+
+}

@@ -582,6 +582,14 @@ th {
   background-image: url("images/honbu-side-outside.jpg");
 }
 
+.masthead--southeast-michigan-page {
+  background-image: url("images/sem-shinzen.jpg");
+}
+
+.masthead--training-information-page {
+  background-image: url("images/group-tou-rei.jpg");
+}
+
 .masthead__title-container {
   display: inline-block;
   background-image: url("images/kikyo-true-white.png");
@@ -676,6 +684,12 @@ th {
   border-bottom: 3px solid #263238;
 }
 
+.block__title--full-width-underline {
+  margin-bottom: 2em;
+  border-bottom: 3px solid;
+  padding-bottom: 10px;
+}
+
 .block__title--light {
   color: #CFD8DC;
   border-color: #CFD8DC;
@@ -711,6 +725,10 @@ th {
 
 .block__content {
   padding: 3em 0;
+}
+
+.block--long-copy p {
+  text-indent: 2em;
 }
 
 .card {
@@ -788,6 +806,10 @@ th {
   .card--contact-card .card__body {
     text-align: inherit;
   }
+}
+
+.footer-nav {
+  padding: 2em 0;
 }
 
 .footer-nav__link {
@@ -1054,13 +1076,33 @@ th {
   text-align: center;
 }
 
-body {
+.genealogy {
+  display: inline-block;
+}
+
+.genealogy__soke-list {
+  line-height: 2em;
+}
+
+.genealogy__soke-list li {
+  min-width: 15em;
+}
+
+body, html {
   color: #263238;
   font-family: 'Noto Sans', sans-serif;
 }
 
 a {
   text-decoration: underline;
+}
+
+blockquote {
+  padding: 1em 1em 1em 3em;
+  margin: 2em 0;
+  font-size: inherit;
+  border-left: 3px solid #eee;
+  font-style: italic;
 }
 
 .site-wrapper {
@@ -1084,4 +1126,13 @@ a {
 
 .person p {
   margin: 0 0 2px 0;
+}
+
+.list--ordered {
+  display: block;
+  text-align: left;
+}
+
+.list--ordered li {
+  display: list-item;
 }

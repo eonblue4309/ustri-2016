@@ -30,15 +30,25 @@ $gray-900: #212121;
 @import "teaser";
 @import "media";
 @import "util";
+@import "genealogy";
 
 
-body {
+body, html {
   color: $primary-dark;
   font-family: 'Noto Sans', sans-serif;
 }
 
 a {
   text-decoration: underline;
+}
+
+blockquote {
+  padding: 1em 1em 1em 3em;
+  margin: 2em 0;
+  font-size: inherit;
+  border-left: 3px solid #eee;
+  font-style: italic;
+
 }
 
 .site-wrapper {
@@ -61,5 +71,14 @@ a {
 
   p {
     margin: 0 0 2px 0;
+  }
+}
+
+.list--ordered {
+  display: block;
+  text-align: left;
+
+  li {
+    display: list-item;
   }
 }
