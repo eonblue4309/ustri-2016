@@ -87,3 +87,38 @@ a {
     display: list-item;
   }
 }
+
+.article-list {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 0.5em;
+    border-left: 3px solid $primary-dark;
+    transition: all 0.2s ease-in;
+
+    &:hover,
+    &:focus {
+      border-width: 7px;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 1em 0 1em 1em;
+    margin-left: 0.5em;
+    text-decoration: none;
+    color: $primary-dark;
+    border-bottom: 1px solid $primary-dark;
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+
+    }
+  }
+}
+
+.article p {
+  text-indent: 2em;
+}

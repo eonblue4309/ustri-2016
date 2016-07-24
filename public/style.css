@@ -1140,3 +1140,35 @@ a {
 .list--ordered li {
   display: list-item;
 }
+
+.article-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.article-list li {
+  margin-bottom: 0.5em;
+  border-left: 3px solid #263238;
+  transition: all 0.2s ease-in;
+}
+
+.article-list li:hover, .article-list li:focus {
+  border-width: 7px;
+}
+
+.article-list a {
+  display: block;
+  padding: 1em 0 1em 1em;
+  margin-left: 0.5em;
+  text-decoration: none;
+  color: #263238;
+  border-bottom: 1px solid #263238;
+}
+
+.article-list a:focus, .article-list a:hover {
+  text-decoration: none;
+}
+
+.article p {
+  text-indent: 2em;
+}

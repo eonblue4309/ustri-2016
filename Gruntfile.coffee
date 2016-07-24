@@ -54,14 +54,21 @@ module.exports = (grunt) ->
           dest: 'public'
         }]
 
+    copy:
+      main:
+        files: [
+          { expand: true, cwd: 'src/', src: ['external/**'], dest: 'public/'},
+        ]
+
     grunt.loadNpmTasks 'grunt-contrib-watch'
     grunt.loadNpmTasks 'grunt-contrib-jade'
     grunt.loadNpmTasks 'grunt-contrib-clean'
     grunt.loadNpmTasks 'grunt-contrib-imagemin'
+    grunt.loadNpmTasks 'grunt-contrib-copy'
     grunt.loadNpmTasks 'grunt-contrib-uglify'
     grunt.loadNpmTasks 'grunt-sass'
     grunt.loadNpmTasks 'grunt-http-server'
     grunt.loadNpmTasks 'grunt-newer'
 
     grunt.registerTask 'default', ['http-server', 'watch']
-    grunt.registerTask 'compile', ['clean', 'sass', 'jade', 'uglify', 'imagemin']
+    grunt.registerTask 'compile', ['clean', 'copy', 'sass', 'jade', 'uglify', 'imagemin']
