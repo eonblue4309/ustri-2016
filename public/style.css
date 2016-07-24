@@ -967,6 +967,10 @@ th {
   padding-bottom: 85px;
 }
 
+.location-block--announcement p {
+  margin: 2em 0;
+}
+
 .news {
   list-style: none;
   padding: 6em 0 3em;
@@ -1074,6 +1078,10 @@ th {
 
 .center {
   text-align: center;
+}
+
+.left {
+  text-align: left;
 }
 
 .genealogy {
