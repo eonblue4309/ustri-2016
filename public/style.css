@@ -1106,6 +1106,11 @@ a {
   text-decoration: underline;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  line-height: 1.1;
+}
+
 .blockquote {
   padding: 1em 1em 1em 3em;
   margin: 2em 0;
@@ -1122,7 +1127,12 @@ a {
   padding-top: 70px;
 }
 
+.overlay {
+  display: none;
+}
+
 .overlay--enabled {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;

@@ -1,17 +1,41 @@
-// TODO: Yeah, this needs to be refactored like crazy. I want to eventually remove jquery - and bootstrap too
-var $siteHeader = $(".site-header");
-var $body = $("body");
-var $overlay = $(".overlay");
+(function() {
+  var siteHeader = document.querySelector(".site-header");
+  var overlay = document.querySelector(".overlay");
+  var menu = document.getElementById("menu");
 
+  menu.addEventListener("click", function() {
+    toggleClass(siteHeader, "site-header--open");
+    toggleClass(overlay, "overlay--enabled");
+    document.body.style.overflow = "hidden";
+  });
 
-$("[data-menu]").on("click", function() {
-  $siteHeader.toggleClass("site-header--open");
-  $body.css( { "overflow": "hidden" } );
+  overlay.addEventListener("click", function() {
+    removeClass(siteHeader, "site-header--open");
+    removeClass(overlay, "overlay--enabled");
+    document.body.style.overflow = "auto";
+  });
 
-  $overlay.toggleClass("overlay--enabled")
-    .one("click", function() {
-      $siteHeader.removeClass("site-header--open");
-      $body.css( { "overflow": "auto" } );
-      $overlay.removeClass("overlay--enabled")
-    });
-});
+  function toggleClass(el, className) {
+      if (el.classList) {
+      el.classList.toggle(className);
+    } else {
+      var classes = el.className.split(' ');
+      var existingIndex = classes.indexOf(className);
+
+      if (existingIndex >= 0)
+        classes.splice(existingIndex, 1);
+      else
+        classes.push(className);
+
+      el.className = classes.join(' ');
+    }
+  }
+
+  function removeClass(el, className) {
+    if (el.classList)
+      el.classList.remove(className);
+    else
+      el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+  }
+
+}());
