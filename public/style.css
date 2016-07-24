@@ -1022,7 +1022,7 @@ th {
   text-align: left;
   position: absolute;
   top: 100%;
-  transform: translateY(-4.5em);
+  transform: translateY(-3.5em);
   transition: all 0.3s ease 0.2s;
 }
 
@@ -1091,6 +1091,7 @@ th {
 body, html {
   color: #263238;
   font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
 }
 
 a {
