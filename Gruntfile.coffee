@@ -16,10 +16,20 @@ module.exports = (grunt) ->
           expand: true
           ext: '.html'
         ]
+      release:
+        options:
+          pretty: false
+        files: [
+          cwd: 'src/jade'
+          src: ['*.jade', 'articles/*.jade', '!**/partials/**/*.jade']
+          dest: 'public'
+          expand: true
+          ext: '.html'
+        ]
 
     sass:
       options:
-        outputStyle: 'expanded'
+        outputStyle: 'compressed'
       dist:
         files: 'public/style.css': 'src/sass/ustri.scss'
 
@@ -71,4 +81,5 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-newer'
 
     grunt.registerTask 'default', ['http-server', 'watch']
-    grunt.registerTask 'compile', ['clean', 'copy', 'sass', 'jade', 'uglify', 'imagemin']
+    grunt.registerTask 'compile', ['clean', 'copy', 'sass', 'jade:compile', 'uglify', 'imagemin']
+    grunt.registerTask 'release', ['clean', 'copy', 'sass', 'jade:release', 'uglify', 'imagemin']
