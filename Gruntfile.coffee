@@ -82,4 +82,4 @@ module.exports = (grunt) ->
 
     grunt.registerTask 'default', ['http-server', 'watch']
     grunt.registerTask 'compile', ['clean', 'copy', 'sass', 'jade:compile', 'uglify', 'imagemin']
-    grunt.registerTask 'release', ['clean', 'copy', 'sass', 'jade:release', 'uglify', 'imagemin']
+    grunt.registerTask 'build', ['clean', 'copy', 'sass', 'jade:release', 'uglify', 'imagemin']
