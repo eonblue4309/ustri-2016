@@ -16,7 +16,7 @@
   });
 
   function toggleClass(el, className) {
-      if (el.classList) {
+    if (el.classList) {
       el.classList.toggle(className);
     } else {
       var classes = el.className.split(' ');
